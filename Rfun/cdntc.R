@@ -11,7 +11,7 @@ visc <- 1.326e-5*(1 + 6.542e-3*Ta + 8.301e-6*Ta^2 - 4.84e-9*Ta^3)
 sp[which(sp==0)]<-.1
 
 # initial guess
-ustaro<-array(0,dim(sp))
+ustaro<-array(0,length(sp))
 ustarn<-.036*sp
 iter<-0
 # iterate to find z0 and ustar
